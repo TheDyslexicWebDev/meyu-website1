@@ -1,0 +1,597 @@
+// ---------------------------------------------
+//                    MEDIA QUERIES
+// ---------------------------------------------
+//
+//
+// -----------------------------------
+//          * *   media-1   * *
+// -----------------------------------
+//            (max-width: 368px)
+//
+@include media-1 {
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+
+    // --------
+    //
+    // --------
+    #grid_Container {
+      .news-container {
+        padding: 10em 1em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        // background-color: rgba(255, 250, 205, 0.712);
+        background-color: white;
+        .quote {
+          margin: 30px 0;
+          h3 {
+            font-family: "Raleway-Thin", sans-serif;
+
+            padding: 20px 0;
+            text-transform: capitalize;
+            color: #272727;
+            font-size: 1.3em;
+            letter-spacing: 1px;
+            display: inline;
+
+            span {
+              color: rgb(146, 146, 146);
+              font-family: "Lato-thin";
+              font-weight: 600;
+              font-size: 1rem;
+            }
+          }
+
+          p:nth-child(1n + 0) {
+            font-family: "Rajdhani-Light";
+            line-height: 24px;
+            font-size: 1.1em;
+            color: #000;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+            word-spacing: 6px;
+          }
+
+          .p:nth-child(2n + 0) {
+            font-family: "Rajdhani-Light";
+            line-height: 24px;
+            font-size: 1.1em;
+            font-weight: 100;
+            margin-top: 15px;
+            color: #000;
+          }
+          a {
+            font-family: "Rajdhani-Light";
+            font-size: 1em;
+            font-weight: 100;
+            text-decoration: none;
+            color: #000;
+            border-bottom: 3px double #4b4b4b;
+            padding-bottom: -1px;
+          }
+
+          a:hover {
+            color: #3a3a3a;
+            border-bottom: 1px solid #3a3a3a;
+          }
+
+          h6 {
+            font-family: "Rajdhani-Light";
+            line-height: 22px;
+            font-size: 1em;
+            color: #333;
+            margin-top: 25px;
+            text-align: left;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+          }
+
+          #img-box {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+
+            img {
+              width: 100%;
+              min-height: auto;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      //   ----------- artworks name
+      h4 {
+        text-align: center;
+
+        color: #272727;
+        font-size: 0.8rem;
+        font-family: $font_family_thin_naomi_legs;
+
+        span {
+          color: rgb(122, 122, 122);
+          font-family: "Lato-thin";
+          font-weight: 600;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    //
+  }
+}
+
+//***************************************///////
+//
+// -----------------------------------
+//          * *   media-2   * *
+// -----------------------------------
+//         (min-width: 369px)
+//
+@include media-2 {
+  //
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+    // --------
+    //
+    // --------
+    #banner-news {
+      width: 100vw;
+      height: 60vh;
+      @include flex-column-data;
+      background-color: rgb(255, 255, 255);
+
+      h3 {
+        font-family: "Raleway-Thin", sans-serif;
+
+        text-transform: capitalize;
+        color: #272727;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        display: inline;
+        font-style: italic;
+        border-bottom: 4px solid transparent;
+        border-bottom-color: #111;
+        padding-bottom: 4px;
+
+        top: 0vh;
+        position: sticky;
+        position: -webkit-sticky;
+      }
+    }
+
+    // --------
+    //
+    // --------
+    #grid_Container {
+      background-color: rgb(255, 255, 255);
+      .news-container {
+        padding: 10em 2em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        // background-color: #faf6f4;
+        background-color: white;
+
+        .quote {
+          margin: 30px 0;
+          h3 {
+            font-family: "Raleway-Thin", sans-serif;
+
+            padding: 20px 0;
+            text-transform: capitalize;
+            color: #272727;
+            font-size: 1.3em;
+            letter-spacing: 1px;
+            display: inline;
+
+            span {
+              color: rgb(146, 146, 146);
+              font-family: "Lato-thin";
+              font-weight: 600;
+              font-size: 1rem;
+            }
+          }
+
+          p:nth-child(1n + 0) {
+            font-family: "Rajdhani-Light";
+            line-height: 24px;
+            font-size: 1.1em;
+            color: #000;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+            word-spacing: 6px;
+          }
+
+          .p:nth-child(2n + 0) {
+            font-family: "Rajdhani-Light";
+            line-height: 24px;
+            font-size: 1.1em;
+            font-weight: 100;
+            margin-top: 15px;
+            color: #000;
+          }
+          a {
+            font-family: "Rajdhani-Light";
+            font-size: 1em;
+            font-weight: 100;
+            text-decoration: none;
+            color: #000;
+            border-bottom: 3px double #4b4b4b;
+            padding-bottom: -1px;
+          }
+
+          a:hover {
+            color: #3a3a3a;
+            border-bottom: 1px solid #3a3a3a;
+          }
+
+          h6 {
+            font-family: "Rajdhani-Light";
+            line-height: 22px;
+            font-size: 1em;
+            color: #333;
+            margin-top: 25px;
+            text-align: left;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+          }
+
+          #img-box {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+
+            img {
+              width: 100%;
+              min-height: auto;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      //   ----------- artworks name
+      h4 {
+        text-align: center;
+
+        color: #272727;
+        font-size: 0.8rem;
+        font-family: $font_family_thin_naomi_legs;
+
+        span {
+          color: rgb(122, 122, 122);
+          font-family: "Lato-thin";
+          font-weight: 600;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    //
+  }
+}
+
+//
+//
+// -----------------------------------
+//          * *   media-3   * *
+// -----------------------------------
+//         (min-width: 469px)
+//
+
+@include media-3 {
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+    //  -------
+    //
+    // --------
+    #grid_Container {
+      .news-container {
+        padding: 10em 3em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+    }
+    //
+  }
+}
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 569px)
+//
+
+@include media-4 {
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+    //  -------
+    //
+    // --------
+    #grid_Container {
+      .news-container {
+        padding: 10em 5em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+    }
+    //
+  }
+}
+
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 669px)
+//
+
+@include media-5 {
+  //
+
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+    //  -------
+    //
+    // --------
+    #grid_Container {
+      .news-container {
+        padding: 10em 8em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+    }
+    //
+  }
+}
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 769px)
+//
+
+@include media-6 {
+  //
+}
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 869px)
+//
+
+@include media-7 {
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 969px)
+//
+
+@include media-8 {
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 1069px)
+//
+
+@include media-9 {
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 1169px)
+//
+
+@include media-10 {
+  //
+}
+//
+//
+// -----------------------------------
+//          * *    * *
+// -----------------------------------
+//  monito   (min-width: 1200px) monito
+//
+
+@include media-11 {
+  //
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+
+    // --------
+    //
+    // --------
+    #banner-news {
+      width: 100vw;
+      height: 70vh;
+      @include flex-column-data;
+      background-color: rgb(255, 255, 255);
+      padding: 0 0 20px 0;
+
+      h3 {
+        font-family: "Raleway-Thin", sans-serif;
+
+        text-transform: capitalize;
+        color: #272727;
+        font-size: 1.6em;
+        letter-spacing: 1px;
+        display: inline;
+        font-style: italic;
+        border-bottom: 4px solid transparent;
+        border-bottom-color: #111;
+        padding: 0 0 1px 0;
+
+        top: 0vh;
+        position: sticky;
+        position: -webkit-sticky;
+      }
+    }
+    // --------
+    //
+    // --------
+
+    #grid_Container {
+      background-color: rgb(255, 255, 255);
+      .news-container {
+        padding: 10em 15em;
+        display: grid;
+        grid-gap: 3em;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        background-color: rgba(255, 250, 205, 0.157);
+        .quote {
+          h3 {
+            font-family: "Raleway-Thin", sans-serif;
+            padding: 20px 0;
+            text-transform: capitalize;
+            color: #272727;
+            font-size: 1.3em;
+            letter-spacing: 1px;
+            display: inline;
+
+            span {
+              color: rgb(146, 146, 146);
+              font-family: "Lato-thin";
+              font-weight: 600;
+              font-size: 1rem;
+            }
+          }
+
+          p:nth-child(1n + 0) {
+            font-family: "Rajdhani-Light";
+            line-height: 24px;
+            font-size: 1.1em;
+            color: #000;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+            word-spacing: 6px;
+          }
+
+          .p:nth-child(2n + 0) {
+            font-family: "Rajdhani-Light";
+            line-height: 24px;
+            font-size: 1.1em;
+            font-weight: 100;
+            margin-top: 15px;
+            color: #000;
+          }
+          a {
+            font-family: "Rajdhani-Light";
+            font-size: 1em;
+            font-weight: 100;
+            text-decoration: none;
+            color: #000;
+            border-bottom: 3px double #4b4b4b;
+            padding-bottom: -1px;
+          }
+
+          a:hover {
+            color: #3a3a3a;
+            border-bottom: 1px solid #3a3a3a;
+          }
+
+          h6 {
+            font-family: "Rajdhani-Light";
+            line-height: 22px;
+            font-size: 1em;
+            color: #333;
+            margin-top: 25px;
+            text-align: left;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+          }
+
+          #img-box {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+
+            img {
+              width: 100%;
+              min-height: auto;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      //   ----------- artworks name
+      h4 {
+        text-align: center;
+
+        color: #272727;
+        font-size: 0.8rem;
+        font-family: $font_family_thin_naomi_legs;
+
+        span {
+          color: rgb(122, 122, 122);
+          font-family: "Lato-thin";
+          font-weight: 600;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    // -----
+  }
+}
+//
+//
+// -----------------------------------
+//          * *    * *
+// -----------------------------------
+//    (min-width: 1300px)
+//
+
+@include media-12 {
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *    * *
+// -----------------------------------
+//    (min-width: 1400px)
+//
+
+@include media-13 {
+  //
+
+  //
+}
+//
+//
+// -----------------------------------
+//          * *    * *
+// -----------------------------------
+//    (min-width: 1500px)
+//
+
+@include media-14 {
+  //
+}

@@ -1,0 +1,242 @@
+@mixin flex-wrap-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@mixin flex-column-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+// -------------------
+//img-box
+@mixin img-box {
+  .img-box {
+    width: 60%;
+
+    img {
+      width: 100%;
+      min-height: auto;
+      object-fit: cover;
+    }
+  }
+}
+// ------------------
+
+@mixin img {
+  img {
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+  }
+}
+
+// -------------------
+//fat underline anim
+@mixin underline-fat {
+  color: #000;
+  font-style: italic;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.5s ease-in-out;
+  &:hover {
+    border-bottom-color: #333333;
+  }
+}
+// thin underline anim
+@mixin underline-thin {
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s ease-in-out;
+  &:hover {
+    border-bottom-color: #111;
+  }
+}
+
+// -------------------
+// thin underline simple
+@mixin underline-simple {
+  font-style: italic;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #111111;
+}
+// -------------------
+
+// underline text h4 span
+
+@mixin underline-text-h4_span {
+  h4 {
+    padding: 0px 10px 150px 60px;
+    color: #666666;
+    font-size: 0.8rem;
+    font-family: $font_family_thin_naomi_legs;
+
+    color: #212121;
+
+    span {
+      color: rgb(165, 165, 165);
+      font-family: "Lato-thin";
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// -------------------------
+// underline text h5 span
+
+@mixin underline-h5_span-text {
+  h5 {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #111111;
+
+    font-size: 1rem;
+    font-size: 0.8rem;
+    font-family: "Poppins-light";
+    color: #212121;
+
+    span {
+      color: rgb(98, 98, 98);
+      font-family: "Lato";
+      font-weight: 100;
+      font-size: 0.9rem;
+      padding: 20px 0 10px 0;
+    }
+  }
+}
+
+@mixin underline_span-text {
+  span {
+    color: rgb(98, 98, 98);
+    font-family: "Lato";
+    font-weight: 100;
+    font-size: 0.8rem;
+    padding: 20px 0 10px 0;
+  }
+}
+// just span
+
+// ---------------------------
+
+// ------------------ Portfolio cases section
+// ------------------
+@mixin flex-column_portfolio {
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+@mixin transform_translate-portfolio-cards-1 {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+@mixin transform_translate-portfolio-cards-2 {
+  opacity: 1;
+  transform: translate(40px, -40px);
+}
+// -------------------
+// --img cards portfolio
+// -------------------
+@mixin image_cards {
+  .imi {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      min-width: auto;
+      object-fit: fill;
+    }
+  }
+}
+// -------------------
+// --MEDIA QUERIES
+@mixin media-1 {
+  @media screen and (max-width: 368px) {
+    @content;
+  }
+}
+@mixin media-2 {
+  @media screen and (min-width: 369px) {
+    @content;
+  }
+}
+@mixin media-3 {
+  @media screen and (min-width: 469px) {
+    @content;
+  }
+}
+@mixin media-4 {
+  @media screen and (min-width: 569px) {
+    @content;
+  }
+}
+@mixin media-5 {
+  @media screen and (min-width: 669px) {
+    @content;
+  }
+}
+
+@mixin media-6 {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin media-7 {
+  @media screen and (min-width: 869px) {
+    @content;
+  }
+}
+// ------
+@mixin media-8 {
+  @media screen and (min-width: 969px) {
+    @content;
+  }
+}
+@mixin media-9 {
+  @media screen and (min-width: 1069px) {
+    @content;
+  }
+}
+@mixin media-10 {
+  @media screen and (min-width: 1169px) {
+    @content;
+  }
+}
+@mixin media-11 {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin media-12 {
+  @media screen and (min-width: 1300px) {
+    @content;
+  }
+}
+@mixin media-13 {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+@mixin media-14 {
+  @media screen and (min-width: 1500px) {
+    @content;
+  }
+}

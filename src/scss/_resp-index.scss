@@ -1,0 +1,1417 @@
+// ---------------------------------------------
+//                    MEDIA QUERIES
+// ---------------------------------------------
+//
+//
+// -----------------------------------
+//          * *   media-1   * *
+// -----------------------------------
+//            (max-width: 368px)
+//
+@include media-1 {
+  //
+  #banner-index {
+    width: 100vw;
+    height: auto;
+    @include flex-column-data;
+
+    .side-one-index {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: auto;
+
+      .text-index {
+        height: 100%;
+        padding: 40px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(253, 253, 253);
+
+        p {
+          width: 80%;
+          font-size: 2.8rem;
+          text-align: left;
+          font-family: "Poppins-light";
+          line-height: 40px;
+          padding: 80px 10px 30px 60px;
+          color: #212121;
+        }
+        h4 {
+          font-size: 1.9rem;
+          text-align: left;
+          line-height: 31px;
+          padding: 30px 30px 20px 60px;
+          font-family: "Fjord One", serif;
+          font-weight: 100;
+          color: #282828;
+        }
+        h5 {
+          font-size: 1rem;
+          text-align: left;
+          padding: 40px 10px 70px 60px;
+          font-family: $font_family_thin_naomi_legs;
+          font-weight: 100;
+          color: #212121;
+
+          a {
+            @include underline-fat;
+          }
+        }
+      }
+    }
+    .side-two-index {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: auto;
+      @include flex-column-data;
+
+      .img-box {
+        width: 100%;
+
+        img {
+          width: 100%;
+          min-height: auto;
+          object-fit: fill;
+        }
+      }
+    }
+  }
+
+  //----------
+  //   about
+  //  --------
+
+  #about-index-pg {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+
+    //  TEXT ABOUT
+    .text-about-pg {
+      width: 80%;
+      height: auto;
+      padding: 60px 0 50px 0;
+      margin-top: 0px;
+      background-color: rgb(255, 255, 255);
+      @include flex-column-data;
+
+      h3 {
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 39px;
+        padding: 10px 0 30px 0;
+        font-family: $font_family_thin_naomi_legs;
+        color: #111;
+      }
+      p {
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 32px;
+        padding: 30px 0px 30px 0px;
+        font-family: $font_family_thin_naomi_legs;
+        font-weight: 100;
+        color: #4b4b4b;
+
+        span {
+          @include underline-simple;
+        }
+        span.double-underline {
+          padding-bottom: 3px;
+          border-bottom: 3px double;
+        }
+      }
+      h4 {
+        text-align: center;
+        padding: 60px 10px 30px 0px;
+
+        color: #666666;
+        font-size: 0.9rem;
+        font-family: $font_family_thin_naomi_legs;
+
+        color: #212121;
+
+        span {
+          color: rgb(98, 98, 98);
+          font-family: "Lato-thin";
+          font-weight: 600;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  //
+  //
+  // -------------
+  //  3D
+  // -------------
+  //
+
+  #port3d {
+    width: 100vw;
+    padding: 0 0 10px 0;
+    background-color: rgb(255, 255, 255);
+    @include flex-column-data;
+
+    // 1 TEXT ABOUT
+    .port3d-text {
+      height: auto;
+      padding: 0px 0px 60px 0px;
+      margin: 0px;
+      background-color: rgb(255, 255, 255);
+
+      @include flex-column-data;
+
+      p {
+        width: 70%;
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 30px;
+        padding: 30px 0px 60px 0px;
+        font-family: $font_family_thin_naomi_legs;
+        font-weight: 100;
+        color: #363636;
+
+        span {
+          font-style: italic;
+          padding-bottom: 2px;
+          border-bottom: 2px solid #000;
+        }
+      }
+    }
+
+    // ----------- images
+    .port-3d-image {
+      width: 98%;
+      height: 100vh;
+
+      @include flex-column-data;
+      background-image: url(../img/city-1_Meyoko.jpg);
+      background-color: rgb(255, 255, 255);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 90%;
+      background-attachment: fixed;
+    }
+
+    // last headline
+    @include underline-text-h4_span;
+    font-family: "Lato-thin";
+    font-weight: 100;
+
+    // last paragraph of 3d section
+    p {
+      width: 75%;
+      font-size: 1.3rem;
+      text-align: left;
+      line-height: 30px;
+      padding: 100px 0px 150px 0px;
+      font-family: $font_family_thin_naomi_legs;
+      font-weight: 100;
+      color: #363636;
+
+      span {
+        @include underline-simple;
+      }
+    }
+  }
+  // ---------------
+  //  image double  2
+  // --------------
+
+  //
+  //
+  #img-index-pg-double2 {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0 50px 0;
+    @include flex-column-data;
+
+    .img-about-pg2 {
+      width: 100%;
+      height: auto;
+      padding: 70px 0;
+      @include flex-column-data;
+      background-color: rgb(0, 0, 0);
+
+      .img-about-pg-One {
+        width: 100%;
+        padding: 10px 0;
+        background-color: rgb(0, 0, 0);
+        // img jpg double
+        @include flex-column-data;
+        @include img-box;
+      }
+      .img-about-pg-Two {
+        width: 100%;
+        padding: 10px 0;
+
+        // img jpg double
+        @include flex-column-data;
+        @include img-box;
+      }
+    }
+    //
+    h4 {
+      text-align: center;
+      padding: 30px 10px 0px 10px;
+
+      color: #666666;
+      font-size: 0.9rem;
+      font-family: $font_family_thin_naomi_legs;
+
+      color: #212121;
+
+      span {
+        color: rgb(98, 98, 98);
+        font-family: "Lato-thin";
+        font-weight: 600;
+        font-size: 0.8rem;
+        word-spacing: 2px;
+      }
+    }
+    h5 {
+      text-align: center;
+      padding: 2px 10px 0px 10px;
+
+      color: #666666;
+      font-size: 0.9rem;
+      font-family: $font_family_thin_naomi_legs;
+
+      color: #212121;
+
+      span {
+        color: rgb(98, 98, 98);
+        font-family: "Lato-thin";
+        font-weight: 600;
+        font-size: 0.8rem;
+        word-spacing: 2px;
+      }
+    }
+  }
+}
+//
+//
+// -----------------------------------
+//          * *   media-2   * *
+// -----------------------------------
+//         (min-width: 369px)
+//
+@include media-2 {
+  //
+  #banner-index {
+    width: 100vw;
+    height: auto;
+    @include flex-column-data;
+
+    .side-one-index {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: auto;
+
+      .text-index {
+        height: 100%;
+        padding: 40px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(253, 253, 253);
+
+        p {
+          width: 80%;
+          font-size: 2.8rem;
+          text-align: left;
+          font-family: "Poppins-light";
+          line-height: 40px;
+          padding: 80px 10px 30px 60px;
+          color: #212121;
+        }
+        h4 {
+          font-size: 1.9rem;
+          text-align: left;
+          line-height: 31px;
+          padding: 30px 30px 20px 60px;
+          font-family: "Fjord One", serif;
+          font-weight: 100;
+          color: #282828;
+        }
+        h5 {
+          font-size: 1rem;
+          text-align: left;
+          padding: 40px 10px 70px 60px;
+          font-family: $font_family_thin_naomi_legs;
+          font-weight: 100;
+          color: #212121;
+
+          a {
+            @include underline-fat;
+          }
+        }
+      }
+    }
+    .side-two-index {
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: auto;
+      @include flex-column-data;
+
+      .img-box {
+        width: 100%;
+
+        img {
+          width: 100%;
+          min-height: auto;
+          object-fit: fill;
+        }
+      }
+    }
+  }
+
+  //----------
+  //   about
+  //  --------
+
+  #about-index-pg {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+
+    //  TEXT ABOUT
+    .text-about-pg {
+      width: 80%;
+      height: auto;
+      padding: 60px 0 50px 0;
+      margin-top: 0px;
+      background-color: rgb(255, 255, 255);
+      @include flex-column-data;
+
+      h3 {
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 39px;
+        padding: 10px 0 30px 0;
+        font-family: $font_family_thin_naomi_legs;
+        color: #111;
+      }
+      p {
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 32px;
+        padding: 30px 0px 30px 0px;
+        font-family: $font_family_thin_naomi_legs;
+        font-weight: 100;
+        color: #4b4b4b;
+
+        span {
+          @include underline-simple;
+        }
+        span.double-underline {
+          padding-bottom: 3px;
+          border-bottom: 3px double;
+        }
+      }
+      h4 {
+        text-align: center;
+        padding: 60px 10px 30px 0px;
+
+        color: #666666;
+        font-size: 0.9rem;
+        font-family: $font_family_thin_naomi_legs;
+
+        color: #212121;
+
+        span {
+          color: rgb(98, 98, 98);
+          font-family: "Lato-thin";
+          font-weight: 600;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  //
+
+  // -------------
+  //  3D
+  // -------------
+  //
+
+  #port3d {
+    width: 100vw;
+    padding: 0 0 10px 0;
+    background-color: rgb(255, 255, 255);
+    @include flex-column-data;
+
+    // 1 TEXT ABOUT
+    .port3d-text {
+      height: auto;
+      padding: 0px 0px 60px 0px;
+      margin: 0px;
+      background-color: rgb(255, 255, 255);
+
+      @include flex-column-data;
+
+      p {
+        width: 70%;
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 30px;
+        padding: 30px 0px 60px 0px;
+        font-family: $font_family_thin_naomi_legs;
+        font-weight: 100;
+        color: #363636;
+
+        span {
+          font-style: italic;
+          padding-bottom: 2px;
+          border-bottom: 2px solid #000;
+        }
+      }
+    }
+    // last headline
+    @include underline-text-h4_span;
+    font-family: "Lato-thin";
+    font-weight: 100;
+  }
+  // ---------------
+  //  image double  2
+  // --------------
+
+  //
+  //
+  #img-index-pg-double2 {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0 50px 0;
+    @include flex-column-data;
+
+    .img-about-pg2 {
+      width: 100%;
+      height: auto;
+      padding: 70px 0;
+      @include flex-column-data;
+      background-color: rgb(255, 255, 255);
+
+      .img-about-pg-One {
+        width: 100%;
+        padding: 10px 0;
+        background-color: rgb(255, 255, 255);
+        // img jpg double
+        @include flex-column-data;
+        @include img-box;
+      }
+      .img-about-pg-Two {
+        width: 100%;
+        padding: 10px 0;
+
+        // img jpg double
+        @include flex-column-data;
+        @include img-box;
+      }
+    }
+    //
+    h4 {
+      text-align: center;
+      padding: 30px 10px 0px 10px;
+
+      color: #666666;
+      font-size: 0.9rem;
+      font-family: $font_family_thin_naomi_legs;
+
+      color: #212121;
+
+      span {
+        color: rgb(98, 98, 98);
+        font-family: "Lato-thin";
+        font-weight: 600;
+        font-size: 0.8rem;
+        word-spacing: 2px;
+      }
+    }
+    h5 {
+      text-align: center;
+      padding: 2px 10px 0px 10px;
+
+      color: #666666;
+      font-size: 0.9rem;
+      font-family: $font_family_thin_naomi_legs;
+
+      color: #212121;
+
+      span {
+        color: rgb(98, 98, 98);
+        font-family: "Lato-thin";
+        font-weight: 600;
+        font-size: 0.8rem;
+        word-spacing: 2px;
+      }
+    }
+  }
+}
+
+//
+//
+// -----------------------------------
+//          * *   media-3   * *
+// -----------------------------------
+//         (min-width: 469px)
+//
+
+@include media-3 {
+  //
+  #banner-index {
+    .side-one-index {
+      .text-index {
+        background-color: rgb(255, 255, 255);
+        p {
+          width: 80%;
+          font-size: 3rem;
+          line-height: 42px;
+          padding: 80px 10px 30px 60px;
+        }
+        h4 {
+          font-size: 1.9rem;
+          line-height: 31px;
+          padding: 30px 30px 20px 60px;
+        }
+        h5 {
+          font-size: 1rem;
+          padding: 50px 10px 70px 60px;
+
+          a {
+            @include underline-fat;
+          }
+        }
+      }
+    }
+  }
+  //
+}
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//         (min-width: 569px)
+//
+
+@include media-4 {
+  //
+  #banner-index {
+    .side-one-index {
+      .text-index {
+        background-color: rgb(255, 255, 255);
+        p {
+          width: 80%;
+          font-size: 3.6rem;
+          line-height: 49px;
+          padding: 80px 10px 30px 60px;
+        }
+        h4 {
+          width: 89%;
+          font-size: 1.9rem;
+          line-height: 31px;
+          padding: 30px 30px 20px 60px;
+        }
+        h5 {
+          font-size: 1rem;
+          padding: 50px 10px 70px 60px;
+
+          a {
+            @include underline-fat;
+          }
+        }
+      }
+    }
+  }
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//         (min-width: 669px)
+//
+
+@include media-5 {
+  //
+  #banner-index {
+    .side-one-index {
+      .text-index {
+        background-color: rgb(255, 255, 255);
+        p {
+          width: 80%;
+          font-size: 4rem;
+          line-height: 56px;
+        }
+        h4 {
+          width: 89%;
+          font-size: 1.9rem;
+          line-height: 31px;
+        }
+        h5 {
+          font-size: 1rem;
+
+          a {
+            border-bottom: 2px solid #272727;
+            transition: border-bottom 0.5s ease-in-out;
+            &:hover {
+              border-bottom: 2px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  //
+}
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//         (min-width: 769px)
+//
+
+@include media-6 {
+  //
+  #banner-index {
+    .side-one-index {
+      .text-index {
+        background-color: rgb(255, 255, 255);
+        p {
+          width: 65%;
+          font-size: 4.5rem;
+          line-height: 65px;
+        }
+        h4 {
+          width: 80%;
+          font-size: 1.9rem;
+          line-height: 31px;
+        }
+        h5 {
+          font-size: 1rem;
+
+          a {
+            border-bottom: 2px solid #272727;
+            transition: border-bottom 0.5s ease-in-out;
+            &:hover {
+              border-bottom: 2px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  //
+}
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//         (min-width: 869px)
+//
+
+@include media-7 {
+  //
+  #banner-index {
+    .side-one-index {
+      .text-index {
+        background-color: rgb(255, 255, 255);
+        p {
+          width: 65%;
+          font-size: 5rem;
+          line-height: 74px;
+        }
+        h4 {
+          width: 80%;
+          font-size: 1.9rem;
+          line-height: 31px;
+        }
+        h5 {
+          font-size: 1.3rem;
+
+          a {
+            border-bottom: 2px solid #272727;
+            transition: border-bottom 0.5s ease-in-out;
+            &:hover {
+              border-bottom: 2px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//         (min-width: 969px)
+//
+
+@include media-8 {
+  // -------------
+  //   banner
+  // -------------
+  //
+  #banner-index {
+    .side-one-index {
+      .text-index {
+        background-color: rgb(255, 255, 255);
+        p {
+          width: 65%;
+          font-size: 5rem;
+          line-height: 74px;
+        }
+        h4 {
+          width: 72%;
+          font-size: 1.9rem;
+          line-height: 31px;
+        }
+        h5 {
+          font-size: 1.3rem;
+
+          a {
+            border-bottom: 2px solid #272727;
+            transition: border-bottom 0.5s ease-in-out;
+            &:hover {
+              border-bottom: 2px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//         (min-width: 1069px)
+//
+
+@include media-9 {
+  // -------------
+  //   banner
+  // -------------
+  //
+  #banner-index {
+    .side-one-index {
+      .text-index {
+        background-color: rgb(255, 255, 255);
+        p {
+          width: 62%;
+          font-size: 5rem;
+          line-height: 74px;
+        }
+        h4 {
+          width: 68%;
+          font-size: 1.9rem;
+          line-height: 31px;
+        }
+        h5 {
+          font-size: 1.3rem;
+
+          a {
+            border-bottom: 2px solid #272727;
+            transition: border-bottom 0.5s ease-in-out;
+            &:hover {
+              border-bottom: 2px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//         (min-width: 1169px)
+//
+
+@include media-10 {
+  // -------------
+  //   banner
+  // -------------
+  //
+  #banner-index {
+    .side-one-index {
+      .text-index {
+        background-color: rgb(255, 255, 255);
+        p {
+          width: 62%;
+          font-size: 5rem;
+          line-height: 74px;
+        }
+        h4 {
+          width: 68%;
+          font-size: 1.9rem;
+          line-height: 31px;
+        }
+        h5 {
+          font-size: 1.3rem;
+
+          a {
+            border-bottom: 2px solid #272727;
+            transition: border-bottom 0.5s ease-in-out;
+            &:hover {
+              border-bottom: 2px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  //
+}
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//  monito   (min-width: 1269px) monito
+//
+
+@include media-11 {
+  //
+  #banner-index {
+    width: 100vw;
+    height: 100vh;
+    @include flex-row-data;
+
+    .side-one-index {
+      background-color: rgb(255, 255, 255);
+      width: 50%;
+      height: 100%;
+
+      .text-index {
+        padding: 40px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+
+        p {
+          width: 90%;
+          font-size: 4.5rem;
+          line-height: 65px;
+          padding: 40px 10px 20px 60px;
+        }
+        h4 {
+          font-size: 1.5rem;
+          text-align: left;
+          line-height: 25px;
+          padding: 20px 30px 20px 60px;
+          font-family: "Fjord One", serif;
+          font-weight: 100;
+          color: #282828;
+        }
+        h5 {
+          font-size: 1.1rem;
+
+          a {
+            border-bottom: 2px solid #272727;
+            transition: border-bottom 0.5s ease-in-out;
+            &:hover {
+              border-bottom: 2px solid transparent;
+            }
+          }
+        }
+      }
+    }
+    .side-two-index {
+      background-color: rgb(255, 255, 255);
+      width: 50%;
+      height: 100%;
+      @include flex-column-data;
+      background-image: url(../img/adam-peter-johnson_metalmagazine-1.jpg);
+      background-size: cover;
+      .img-box {
+        width: 100%;
+        display: none;
+        img {
+          width: 100%;
+          min-height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  //----------
+  //   about portfolio
+  //  --------
+
+  #about-index-pg {
+    width: 100vw;
+    padding: 100px 0 60px 0;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+
+    @include flex-column-data;
+
+    //  TEXT ABOUT
+    .text-about-pg {
+      width: 80%;
+      height: auto;
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      @include flex-column-data;
+
+      h3 {
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 39px;
+        padding: 10px 0 30px 0;
+        font-family: $font_family_thin_naomi_legs;
+        color: #272727;
+      }
+      p {
+        width: 85%;
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 34px;
+        padding: 10px 0px 30px 0px;
+        font-family: $font_family_thin_naomi_legs;
+        font-weight: 100;
+        color: #4b4b4b;
+
+        span {
+          @include underline-simple;
+        }
+        span.double-underline {
+          padding-bottom: 3px;
+          border-bottom: 3px double #272727;
+        }
+      }
+      h4 {
+        text-align: center;
+        padding: 80px 10px 30px 0px;
+
+        color: #666666;
+        font-size: 0.9rem;
+        font-family: $font_family_thin_naomi_legs;
+
+        color: #212121;
+
+        span {
+          color: rgb(98, 98, 98);
+          font-family: "Lato-thin";
+          font-weight: 600;
+          margin: 0 3px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+    //
+  }
+
+  //
+  // ------------
+  // img double 2
+  // -----------
+  //
+  //
+  #img-index-pg-double2 {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+
+    .img-about-pg2 {
+      width: 100%;
+      height: 110vh;
+
+      @include flex-row-data;
+      background-color: rgb(255, 255, 255);
+
+      .img-about-pg-One {
+        width: 48%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+
+        background-position: left;
+        // img jpg double
+        @include flex-column-data;
+        align-items: flex-end;
+
+        .img-box {
+          width: 75%;
+          @include img;
+        }
+      }
+      .img-about-pg-Two {
+        width: 48%;
+        height: 100%;
+        // img jpg double
+        @include flex-column-data;
+        align-items: flex-start;
+
+        .img-box {
+          width: 75%;
+          @include img;
+        }
+      }
+    }
+
+    //
+    h4 {
+      text-align: center;
+      padding: 30px 0px 0px 0px;
+
+      color: #222222;
+      font-size: 0.8rem;
+      font-family: $font_family_thin_naomi_legs;
+
+      span {
+        color: rgb(98, 98, 98);
+        font-family: "Lato-thin";
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+    }
+    h5 {
+      text-align: center;
+      padding: 2px 0px 0px 0px;
+
+      color: #222222;
+      font-size: 0.8rem;
+      font-family: $font_family_thin_naomi_legs;
+
+      span {
+        text-transform: lowercase;
+        color: rgb(98, 98, 98);
+        font-family: "Lato-thin";
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  //
+  // -------------
+  //  3D
+  // -------------
+  //
+
+  #port3d {
+    width: 100vw;
+    padding: 0 0 10px 0;
+    background-color: rgb(255, 255, 255);
+    @include flex-column-data;
+
+    // 1 TEXT ABOUT
+    .port3d-text {
+      width: 100%;
+      height: auto;
+      padding: 0px 0px 60px 0px;
+      margin: 0px;
+      background-color: rgb(255, 255, 255);
+
+      @include flex-column-data;
+
+      p {
+        width: 60%;
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 30px;
+        padding: 30px 0px 60px 0px;
+        font-family: $font_family_thin_naomi_legs;
+        font-weight: 100;
+        color: #363636;
+
+        span {
+          font-style: italic;
+          padding-bottom: 2px;
+          border-bottom: 2px solid #000;
+        }
+      }
+    }
+  }
+}
+
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//    (min-width: 1300px)
+//
+
+@include media-12 {
+  //
+  #banner-index {
+    width: 100vw;
+    height: 100vh;
+    @include flex-row-data;
+
+    .side-one-index {
+      background-color: rgb(255, 255, 255);
+      width: 50%;
+      height: 100%;
+
+      .text-index {
+        padding: 40px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          width: 90%;
+          font-size: 4.5rem;
+          line-height: 65px;
+          padding: 40px 10px 20px 60px;
+        }
+        h4 {
+          font-size: 1.5rem;
+          text-align: left;
+          line-height: 25px;
+          padding: 20px 30px 20px 60px;
+          font-family: "Fjord One", serif;
+          font-weight: 100;
+          color: #282828;
+        }
+        h5 {
+          font-size: 1.1rem;
+
+          a {
+            border-bottom: 2px solid #272727;
+            transition: border-bottom 0.5s ease-in-out;
+            &:hover {
+              border-bottom: 2px solid transparent;
+            }
+          }
+        }
+      }
+    }
+    .side-two-index {
+      background-color: rgb(255, 255, 255);
+      width: 50%;
+      height: 100%;
+      @include flex-column-data;
+      background-image: url(../img/semiotus-black-by-melissamurillo-meyoko.jpg);
+      background-size: cover;
+      .img-box {
+        width: 100%;
+        display: none;
+        img {
+          width: 100%;
+          min-height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  // -------------
+  //  3D
+  // -------------
+  //
+
+  #port3d {
+    width: 100vw;
+    padding: 0 0 10px 0;
+    background-color: rgb(255, 255, 255);
+    @include flex-column-data;
+
+    // 1 TEXT ABOUT
+    .port3d-text {
+      height: auto;
+      padding: 0px 0px 60px 0px;
+      margin: 0px;
+      background-color: rgb(255, 255, 255);
+
+      @include flex-column-data;
+
+      p {
+        width: 70%;
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 30px;
+        padding: 30px 0px 60px 0px;
+        font-family: $font_family_thin_naomi_legs;
+        font-weight: 100;
+        color: #363636;
+
+        span {
+          font-style: italic;
+          padding-bottom: 2px;
+          border-bottom: 2px solid #000;
+        }
+      }
+    }
+    // last headline
+    @include underline-text-h4_span;
+    font-family: "Lato-thin";
+    font-weight: 100;
+  }
+}
+
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//    (min-width: 1400px)
+//
+
+@include media-13 {
+  //
+  #banner-index {
+    width: 100vw;
+    height: 100vh;
+    @include flex-row-data;
+
+    .side-one-index {
+      background-color: rgb(255, 255, 255);
+      width: 50%;
+      height: 100%;
+
+      .text-index {
+        padding: 40px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          width: 90%;
+          font-size: 5.5rem;
+          line-height: 70px;
+          padding: 40px 10px 20px 60px;
+        }
+        h4 {
+          font-size: 1.5rem;
+          text-align: left;
+          line-height: 25px;
+          padding: 20px 30px 10px 60px;
+          font-family: "Fjord One", serif;
+          font-weight: 100;
+          color: #282828;
+        }
+        h5 {
+          font-size: 1.1rem;
+          padding-top: 30px;
+          a {
+            border-bottom: 2px solid #272727;
+            transition: border-bottom 0.5s ease-in-out;
+            &:hover {
+              border-bottom: 2px solid transparent;
+            }
+          }
+        }
+      }
+    }
+    .side-two-index {
+      background-color: rgb(255, 255, 255);
+      width: 50%;
+      height: 100%;
+      @include flex-column-data;
+      background-image: url(../img/semiotus-black-by-melissamurillo-meyoko.jpg);
+      background-size: cover;
+      .img-box {
+        width: 100%;
+        display: none;
+        img {
+          width: 100%;
+          min-height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  //
+}
+//
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//    (min-width: 1500px)
+//
+
+@include media-14 {
+  //
+  #banner-index {
+    width: 100vw;
+    height: auto;
+    @include flex-column-data;
+
+    .side-one-index {
+      background-color: rgb(136, 127, 127);
+      width: 50%;
+      height: auto;
+
+      .text-index {
+        height: 100%;
+        padding: 100px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(253, 253, 253);
+
+        p {
+          width: 85%;
+          font-size: 5.8rem;
+          text-align: left;
+          font-family: "Poppins-light";
+          line-height: 79px;
+          padding: 80px 10px 30px 60px;
+          color: #212121;
+        }
+        h4 {
+          width: 85%;
+          font-size: 1.9rem;
+          text-align: left;
+          line-height: 31px;
+          padding: 30px 30px 20px 60px;
+          font-family: "Fjord One", serif;
+          font-weight: 100;
+          color: #282828;
+        }
+        h5 {
+          font-size: 1rem;
+          text-align: left;
+          padding: 40px 10px 70px 60px;
+          font-family: $font_family_thin_naomi_legs;
+          font-weight: 100;
+          color: #212121;
+
+          a {
+            @include underline-fat;
+          }
+        }
+      }
+    }
+    .side-two-index {
+      background-color: rgb(255, 255, 255);
+      width: 50%;
+      height: 60vh;
+      @include flex-column-data;
+
+      .img-box {
+        width: 100%;
+
+        img {
+          width: 100%;
+          min-height: auto;
+          object-fit: fill;
+        }
+      }
+    }
+  }
+  //
+  //
+}

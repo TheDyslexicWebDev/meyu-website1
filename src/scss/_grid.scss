@@ -1,0 +1,104 @@
+// --------------------------------
+// --------------------------------
+// --------------------------------
+
+#grid_Container {
+  .news-container {
+    padding: 10em 2em;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    background-color: #faf6f4;
+
+    .quote {
+      h3 {
+        font-family: "Raleway-Thin", sans-serif;
+        padding: 20px 0;
+        text-transform: capitalize;
+        color: #272727;
+        font-size: 1.3em;
+        letter-spacing: 1px;
+        display: inline;
+
+        span {
+          color: rgb(146, 146, 146);
+          font-family: "Lato-thin";
+          font-weight: 600;
+          font-size: 1rem;
+        }
+      }
+
+      p:nth-child(1n + 0) {
+        font-family: "Rajdhani-Light";
+        line-height: 24px;
+        font-size: 1.1em;
+        color: #000;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+        word-spacing: 6px;
+      }
+
+      .p:nth-child(2n + 0) {
+        font-family: "Rajdhani-Light";
+        line-height: 24px;
+        font-size: 1.1em;
+        font-weight: 100;
+        margin-top: 15px;
+        color: #000;
+      }
+      a {
+        font-family: "Rajdhani-Light";
+        font-size: 1em;
+        font-weight: 100;
+        text-decoration: none;
+        color: #000;
+        border-bottom: 3px double #4b4b4b;
+        padding-bottom: -1px;
+      }
+
+      a:hover {
+        color: #3a3a3a;
+        border-bottom: 1px solid #3a3a3a;
+      }
+
+      h6 {
+        font-family: "Rajdhani-Light";
+        line-height: 22px;
+        font-size: 1em;
+        color: #333;
+        margin-top: 25px;
+        text-align: left;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+      }
+
+      #img-box {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+
+        img {
+          width: 100%;
+          min-height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  //   ----------- artworks name
+  h4 {
+    text-align: center;
+
+    color: #272727;
+    font-size: 0.8rem;
+    font-family: $font_family_thin_naomi_legs;
+
+    span {
+      color: rgb(122, 122, 122);
+      font-family: "Lato-thin";
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+  }
+}

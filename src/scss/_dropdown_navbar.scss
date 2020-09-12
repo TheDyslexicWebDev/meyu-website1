@@ -1,0 +1,596 @@
+// ---------------------------------------------
+//                    MEDIA QUERIES
+// ---------------------------------------------
+//
+//
+// -----------------------------------
+//          * *   media-1   * *
+// -----------------------------------
+//            (max-width: 368px)
+//
+@include media-1 {
+  //
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+    //
+
+    header {
+      width: 100vw;
+      position: fixed;
+      background-color: white;
+      z-index: 1;
+      transition: top 0.8s;
+      padding: 0 40px;
+
+      //   -----
+      // nav
+      // -------
+
+      nav {
+        width: 100%;
+        min-height: 8vh;
+        padding: 15px 0px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+          font-family: $font_family_fat;
+          letter-spacing: 15px;
+          padding: 0 0 0 30px;
+        }
+
+        /* ----------------NAV-OPEN--------------- */
+
+        .nav-open {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100vh;
+          background-color: #ffffff;
+          position: fixed;
+          transform: translateY(-100%);
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .services {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .img-navOpen {
+              width: 50%;
+              height: 50%;
+
+              background-image: url(../img/adam-peter-johnson_metalmagazine-1.jpg);
+              background-size: 50%;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+
+            ul {
+              margin-bottom: 30px;
+              li {
+                text-align: center;
+                font-family: "Poppins-light";
+                font-weight: 100;
+
+                a {
+                  text-decoration: none;
+                  color: rgb(14, 14, 14);
+                  border: 0;
+                  padding: 0;
+
+                  &:hover {
+                    color: rgb(105, 105, 105);
+                  }
+                }
+              }
+              //   -----------
+
+              .linkOne-Nav {
+                position: fixed;
+                top: 50%;
+                left: 50px;
+                transform-origin: 0 0;
+                transform: rotate(-90deg) translate(-50%, 0);
+              }
+              .linkTwo-Nav {
+                position: fixed;
+                bottom: 3.5%;
+                left: 48%;
+                transform-origin: 0 0;
+              }
+
+              .linkThree-Nav {
+                position: fixed;
+                top: 50%;
+                right: 40px;
+                transform-origin: 100% 0;
+                transform: rotate(90deg) translate(50%, 0);
+              }
+            }
+          }
+        }
+        //
+      }
+
+      /* ---------------- */
+      /* logo menu*/
+      /* ---------------- */
+      .logo,
+      .menu {
+        z-index: 2;
+      }
+      .logo {
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 5px;
+      }
+
+      .logo span {
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 5px;
+        font-style: italic;
+      }
+      .menu {
+        cursor: pointer;
+      }
+    }
+    //
+  }
+}
+
+//***************************************///////
+//
+// -----------------------------------
+//          * *   media-2   * *
+// -----------------------------------
+//         (min-width: 369px)
+//
+@include media-2 {
+  //
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+
+    header {
+      width: 100vw;
+      position: fixed;
+      background-color: white;
+      z-index: 1;
+      transition: top 0.8s;
+      padding: 0 40px;
+
+      //   -----
+      // nav
+      // -------
+
+      nav {
+        width: 100%;
+        min-height: 8vh;
+        padding: 15px 0px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+          font-family: $font_family_fat;
+          letter-spacing: 15px;
+          padding: 0 0 0 30px;
+        }
+
+        /* ----------------NAV-OPEN--------------- */
+
+        .nav-open {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100vh;
+          background-color: #ffffff;
+          position: fixed;
+          transform: translateY(-100%);
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .services {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .img-navOpen {
+              width: 50%;
+              height: 50%;
+
+              background-image: url(../img/neon.jpg);
+              background-size: 50%;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+
+            ul {
+              margin-bottom: 30px;
+              li {
+                text-align: center;
+                font-family: "Poppins-light";
+                font-weight: 100;
+
+                a {
+                  text-decoration: none;
+                  color: rgb(14, 14, 14);
+                  border: 0;
+                  padding: 0;
+
+                  &:hover {
+                    color: rgb(105, 105, 105);
+                  }
+                }
+              }
+              //   -----------
+
+              .linkOne-Nav {
+                position: fixed;
+                top: 50%;
+                left: 50px;
+                transform-origin: 0 0;
+                transform: rotate(-90deg) translate(-50%, 0);
+              }
+              .linkTwo-Nav {
+                position: fixed;
+                bottom: 3.5%;
+                left: 48%;
+                transform-origin: 0 0;
+              }
+
+              .linkThree-Nav {
+                position: fixed;
+                top: 50%;
+                right: 40px;
+                transform-origin: 100% 0;
+                transform: rotate(90deg) translate(50%, 0);
+              }
+            }
+          }
+        }
+        //
+      }
+
+      /* ---------------- */
+      /* logo menu*/
+      /* ---------------- */
+      .logo,
+      .menu {
+        z-index: 2;
+      }
+      .logo {
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 5px;
+      }
+
+      .logo span {
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 5px;
+        font-style: italic;
+      }
+      .menu {
+        cursor: pointer;
+      }
+    }
+
+    //   --------------
+  }
+}
+
+//
+//
+// -----------------------------------
+//          * *   media-3   * *
+// -----------------------------------
+//         (min-width: 469px)
+//
+
+@include media-3 {
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+
+    //
+  }
+}
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 569px)
+//
+
+@include media-4 {
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+    //  -------
+
+    //
+  }
+}
+
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 669px)
+//
+
+@include media-5 {
+  //
+
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+    //  -------
+    //
+
+    //
+  }
+}
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 769px)
+//
+
+@include media-6 {
+  //
+}
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 869px)
+//
+
+@include media-7 {
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 969px)
+//
+
+@include media-8 {
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 1069px)
+//
+
+@include media-9 {
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *     * *
+// -----------------------------------
+//         (min-width: 1169px)
+//
+
+@include media-10 {
+  //
+}
+//
+//
+// -----------------------------------
+//          * *    * *
+// -----------------------------------
+//  monito   (min-width: 1200px) monito
+//
+
+@include media-11 {
+  //
+  #page {
+    display: flex;
+    flex-wrap: wrap;
+
+    // -------------
+
+    header {
+      width: 100vw;
+      position: fixed;
+      background-color: white;
+      z-index: 1;
+      transition: top 0.8s;
+      padding: 0 40px;
+
+      //   -----
+      // nav
+      // -------
+
+      nav {
+        width: 100%;
+        min-height: 8vh;
+        padding: 15px 0px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+          font-family: $font_family_fat;
+          letter-spacing: 15px;
+          padding: 0 0 0 30px;
+        }
+
+        /* ----------------NAV-OPEN--------------- */
+
+        .nav-open {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100vh;
+          background-color: #ffffff;
+          position: fixed;
+          transform: translateY(-100%);
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .services {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .img-navOpen {
+              width: 50%;
+              height: 50%;
+
+              background-image: url(../img/neon.jpg);
+              background-size: 40%;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+
+            ul {
+              margin-bottom: 30px;
+              li {
+                text-align: center;
+                font-family: "Poppins-light";
+                font-weight: 100;
+
+                a {
+                  text-decoration: none;
+                  color: rgb(14, 14, 14);
+                  border: 0;
+                  padding: 0;
+                  letter-spacing: 5px;
+
+                  &:hover {
+                    color: rgb(105, 105, 105);
+                  }
+                }
+              }
+              //   -----------
+
+              .linkOne-Nav {
+                position: fixed;
+                top: 50%;
+                left: 50px;
+                transform-origin: 0 0;
+                transform: rotate(-90deg) translate(-50%, 0);
+              }
+              .linkTwo-Nav {
+                position: fixed;
+                bottom: 3.5%;
+                left: 48%;
+                transform-origin: 0 0;
+              }
+
+              .linkThree-Nav {
+                position: fixed;
+                top: 50%;
+                right: 40px;
+                transform-origin: 100% 0;
+                transform: rotate(90deg) translate(50%, 0);
+              }
+            }
+          }
+        }
+        //
+      }
+
+      /* ---------------- */
+      /* logo menu*/
+      /* ---------------- */
+      .logo,
+      .menu {
+        z-index: 2;
+      }
+      .logo {
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 5px;
+      }
+
+      .logo span {
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 5px;
+        font-style: italic;
+      }
+      .menu {
+        cursor: pointer;
+      }
+    }
+
+    //**********
+  }
+}
+//
+//
+// -----------------------------------
+//          * *    * *
+// -----------------------------------
+//    (min-width: 1300px)
+//
+
+@include media-12 {
+  //
+}
+
+//
+//
+// -----------------------------------
+//          * *    * *
+// -----------------------------------
+//    (min-width: 1400px)
+//
+
+@include media-13 {
+  //
+
+  //
+}
+//
+//
+// -----------------------------------
+//          * *    * *
+// -----------------------------------
+//    (min-width: 1500px)
+//
+
+@include media-14 {
+  //
+}

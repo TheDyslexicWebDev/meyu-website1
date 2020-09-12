@@ -1,0 +1,46 @@
+header {
+  width: 100vw;
+  min-height: 8vh;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  transition: top 0.8s;
+  // border-bottom: 1px solid #000;
+  // box-shadow: 2px 3px 8px rgba(240, 240, 240, 0.8);
+
+  padding: 0 40px;
+
+  h3 {
+    font-family: $font_family_fat;
+    letter-spacing: 15px;
+    padding: 0 0 0 30px;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  nav {
+    background-color: rgb(255, 255, 255); //rgb(180, 204, 152 soft olive
+    ul {
+      list-style: none;
+
+      li {
+        background-color: transparent;
+        display: inline-block;
+        margin-right: 20px;
+        list-style: none;
+        font-family: $font_family_thin_naomi_legs;
+        font-size: 0.9rem;
+        a {
+          @include underline-thin;
+          color: #111;
+        }
+      }
+    }
+  }
+}
+//  ------- header ------

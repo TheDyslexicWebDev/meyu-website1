@@ -1,0 +1,509 @@
+//
+// -------------
+//  footer TWO media queries
+// -------------
+//
+//
+// -----------------------------------
+//          * *   media-1   * *
+// -----------------------------------
+//            (max-width: 368px)
+//
+@include media-1 {
+  #page {
+    #footer-Two {
+      background-color: rgb(255, 255, 255);
+      width: 100vw;
+      height: auto;
+      @include flex-column-data;
+      margin-top: 100px;
+
+      .footer-Two-container {
+        width: 90%;
+
+        @include flex-column-data;
+        justify-content: space-between;
+        // here you change the direction
+      }
+      //-------------------
+      .subscription-index {
+        width: 100%;
+        padding: 20px 0 10px 0;
+
+        .subscription-container-index {
+          background-color: rgb(255, 255, 255);
+
+          // -------------
+
+          #mc_embed_signup {
+            background: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 110px;
+          }
+
+          /* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+          Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
+
+          #mc_embed_signup form {
+            background: none;
+            text-align: center;
+            padding: 10px;
+          }
+
+          #mc_embed_signup_scroll {
+            background: none !important;
+          }
+
+          .mc-field-group {
+            display: inline-block;
+          }
+
+          /* positions input field horizontally */
+
+          #mc_embed_signup input.email {
+            font-family: "Poppins-light";
+            font-size: 0.8em;
+            outline: none;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid rgba(46, 46, 46, 0.548);
+            color: rgba(46, 46, 46, 0.548);
+            background: none;
+            box-sizing: border-box;
+
+            padding: 5px 1em;
+            display: inline-block;
+            margin: 0;
+            width: 180px;
+          }
+          ::placeholder {
+            color: rgba(46, 46, 46, 0.548);
+            font-size: 0.7rem;
+          }
+          /*-----------HEADLINE SECTION----------------*/
+          #mc_embed_signup label {
+            background: none;
+            display: block;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            font-family: $font_family_thin_naomi_legs;
+            font-weight: 100;
+            font-size: 0.9em;
+            color: rgb(182, 182, 182);
+          }
+
+          #mc_embed_signup .clear {
+            display: inline-block;
+          }
+
+          /* positions button horizontally in line with input */
+
+          /******--------------button---------------******/
+
+          #mc_embed_signup .button {
+            outline: none;
+            border-top: 0px dotted rgb(117, 117, 117);
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid rgba(46, 46, 46, 0.548);
+            letter-spacing: 0.03em;
+            font-size: 0.8rem;
+            color: rgba(46, 46, 46, 0.548);
+            background: none;
+            box-sizing: border-box;
+
+            height: 32px;
+            line-height: 32px;
+            width: 80%;
+            padding: 1px 18px 16px 0px;
+
+            display: inline-block;
+            margin: 0;
+            transition: all 0.23s ease-in-out 0s;
+          }
+
+          #mc_embed_signup .button:hover {
+            color: rgb(148, 148, 148);
+            cursor: pointer;
+            background: none;
+            border-bottom: 1px dotted rgb(148, 148, 148);
+            transition: 0.5s ease;
+          }
+
+          #mc_embed_signup div#mce-responses {
+            background: none;
+            float: left;
+            top: -1.4em;
+            padding: 0em 0.5em 0em 0.5em;
+            overflow: hidden;
+            width: 90%;
+            margin: 0 5%;
+            clear: both;
+          }
+
+          #mc_embed_signup div.response {
+            margin: 1em 0;
+            padding: 1em 0.5em 0.5em 0;
+            font-weight: bold;
+            float: left;
+            top: -1.5em;
+            z-index: 1;
+            width: 80%;
+          }
+
+          #mc_embed_signup #mce-error-response {
+            display: none;
+          }
+
+          #mc_embed_signup #mce-success-response {
+            color: #529214;
+
+            display: none;
+          }
+
+          #mc_embed_signup label.error {
+            display: block;
+            float: none;
+            width: auto;
+            margin-left: 1.05em;
+            text-align: left;
+            padding: 0.5em 0;
+          }
+        }
+      }
+
+      //-----------------
+      .social-links-index {
+        width: 100%;
+        @include flex-column-data;
+        // here you change the direction
+        justify-content: space-between;
+
+        padding: 40px 0 20px 0;
+
+        .links-container-One {
+          padding: 0px 0 20px 0;
+
+          li {
+            display: inline;
+            margin: 0 10px;
+            font-family: "Fjord One", serif;
+
+            font-weight: 100;
+            font-size: 0.8rem;
+            a {
+              color: rgba(46, 46, 46, 0.376);
+            }
+          }
+        }
+      }
+      //
+      .links-container-Two {
+        color: rgba(46, 46, 46, 0.548);
+        font-family: "Lato-thin";
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+// -----------------------------------
+//          * *   media-2   * *
+// -----------------------------------
+//          (min-width: 369px)
+//
+@include media-2 {
+  #page {
+    #footer-Two {
+      background-color: rgb(255, 255, 255);
+      width: 100vw;
+      height: auto;
+      @include flex-column-data;
+      margin-top: 100px;
+
+      .footer-Two-container {
+        width: 90%;
+
+        @include flex-column-data;
+        justify-content: space-between;
+        // here you change the direction
+      }
+      //-------------------
+      .subscription-index {
+        width: 100%;
+        padding: 20px 0 10px 0;
+
+        .subscription-container-index {
+          background-color: rgb(255, 255, 255);
+
+          // -------------
+
+          #mc_embed_signup {
+            background: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 110px;
+          }
+
+          /* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+          Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
+
+          #mc_embed_signup form {
+            background: none;
+            text-align: center;
+            padding: 10px;
+          }
+
+          #mc_embed_signup_scroll {
+            background: none !important;
+          }
+
+          .mc-field-group {
+            display: inline-block;
+          }
+
+          /* positions input field horizontally */
+
+          #mc_embed_signup input.email {
+            font-family: "Poppins-light";
+            font-size: 0.8em;
+            outline: none;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid rgba(46, 46, 46, 0.548);
+            color: rgba(46, 46, 46, 0.548);
+            background: none;
+            box-sizing: border-box;
+
+            padding: 5px 1em;
+            display: inline-block;
+            margin: 0;
+            width: 180px;
+          }
+          ::placeholder {
+            color: rgba(46, 46, 46, 0.548);
+            font-size: 0.7rem;
+          }
+          /*-----------HEADLINE SECTION----------------*/
+          #mc_embed_signup label {
+            background: none;
+            display: block;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            font-family: $font_family_thin_naomi_legs;
+            font-weight: 100;
+            font-size: 0.9em;
+            color: rgb(182, 182, 182);
+          }
+
+          #mc_embed_signup .clear {
+            display: inline-block;
+          }
+
+          /* positions button horizontally in line with input */
+
+          /******--------------button---------------******/
+
+          #mc_embed_signup .button {
+            outline: none;
+            border-top: 0px dotted rgb(117, 117, 117);
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid rgba(46, 46, 46, 0.548);
+            letter-spacing: 0.03em;
+            font-size: 0.8rem;
+            color: rgba(46, 46, 46, 0.548);
+            background: none;
+            box-sizing: border-box;
+
+            height: 32px;
+            line-height: 32px;
+            width: 80%;
+            padding: 1px 18px 16px 0px;
+
+            display: inline-block;
+            margin: 0;
+            transition: all 0.23s ease-in-out 0s;
+          }
+
+          #mc_embed_signup .button:hover {
+            color: rgb(148, 148, 148);
+            cursor: pointer;
+            background: none;
+            border-bottom: 1px dotted rgb(148, 148, 148);
+            transition: 0.5s ease;
+          }
+
+          #mc_embed_signup div#mce-responses {
+            background: none;
+            float: left;
+            top: -1.4em;
+            padding: 0em 0.5em 0em 0.5em;
+            overflow: hidden;
+            width: 90%;
+            margin: 0 5%;
+            clear: both;
+          }
+
+          #mc_embed_signup div.response {
+            margin: 1em 0;
+            padding: 1em 0.5em 0.5em 0;
+            font-weight: bold;
+            float: left;
+            top: -1.5em;
+            z-index: 1;
+            width: 80%;
+          }
+
+          #mc_embed_signup #mce-error-response {
+            display: none;
+          }
+
+          #mc_embed_signup #mce-success-response {
+            color: #529214;
+
+            display: none;
+          }
+
+          #mc_embed_signup label.error {
+            display: block;
+            float: none;
+            width: auto;
+            margin-left: 1.05em;
+            text-align: left;
+            padding: 0.5em 0;
+          }
+        }
+      }
+
+      //-----------------
+      .social-links-index {
+        width: 100%;
+        @include flex-column-data;
+        // here you change the direction
+        justify-content: space-between;
+
+        padding: 40px 0 20px 0;
+
+        .links-container-One {
+          padding: 0px 0 20px 0;
+
+          li {
+            display: inline;
+            margin: 0 10px;
+            font-family: "Fjord One", serif;
+
+            font-weight: 100;
+            font-size: 0.8rem;
+            a {
+              color: rgba(46, 46, 46, 0.376);
+            }
+          }
+        }
+      }
+      //
+      .links-container-Two {
+        color: rgba(46, 46, 46, 0.548);
+        font-family: "Lato-thin";
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//  monito   (min-width: 1269px) monito
+//
+@include media-11 {
+  #page {
+    #footer-Two {
+      background-color: rgb(255, 255, 255);
+      width: 100vw;
+      height: auto;
+      @include flex-column-data;
+      margin-top: 200px;
+
+      .footer-Two-container {
+        width: 90%;
+
+        @include flex-row-data;
+        // here you change the direction
+      }
+      //-------------------
+      .subscription-index {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        background-color: rgb(255, 255, 255);
+        padding: 0 0 0 0;
+
+        .subscription-container-index {
+          background-color: rgba(255, 255, 255, 0);
+
+          // -------------
+        }
+      }
+
+      //-----------------
+      .social-links-index {
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+        @include flex-row-data;
+        // here you change the direction
+        justify-content: space-between;
+
+        padding: 0 0 0 0;
+
+        .links-container-One {
+          background-color: rgb(255, 255, 255);
+          padding: 0px 0 0px 0;
+
+          li {
+            display: inline;
+            margin: 0 10px;
+            font-family: "Fjord One", serif;
+
+            font-weight: 100;
+            font-size: 0.8rem;
+            a {
+              font-size: 0.7rem;
+              text-decoration: none;
+              font-family: "Lato-thin";
+              font-weight: 600;
+
+              transition: 0.2s ease-in-out;
+              padding-bottom: 1px;
+              border-bottom: 1px solid transparent;
+
+              &:hover {
+                color: rgb(92, 92, 92);
+                border-bottom-color: rgb(92, 92, 92);
+              }
+            }
+          }
+        }
+      }
+      //
+      .links-container-Two {
+        background-color: rgb(255, 255, 255);
+        color: rgba(46, 46, 46, 0.548);
+        font-family: "Lato-thin";
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

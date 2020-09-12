@@ -1,0 +1,95 @@
+.anim {
+  opacity: 0;
+  /* //   very important to add the opacity at the end of the ...
+    // JS set up otherwise there will be jumping elements */
+}
+
+@keyframes anim1 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// ---------------------------
+// ---------------------------
+// SLIDER
+// ---------------------------
+.carousel-section {
+  width: 80%;
+}
+
+#slider {
+  overflow: hidden; /* It will makes that it stays within the page, you will see the bottom grey bar dissappear*/
+}
+
+#slider figure {
+  position: relative;
+  width: 500%; /* 100% for each picture, 10 pictures = 1000%, thats why he did put 500% in the width, because he had 5 pictures, but i fount a creative way, i find that adding 300 even if i have 5 pictures, makes the design atypic and by so interesting, i have seen a website using a similar slider:
+  
+    https://www.citylikeyou.com/
+  
+    if they change the website i have an screenshot in the images,
+    but its only for homework.
+    
+    */
+  margin: 0;
+  left: 0;
+  animation-name: slider;
+  animation-delay: 2s;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  /*the short way of the three lines above... animation: 2s slider infinite; */
+}
+#slider figure img {
+  width: 20%; /*CAREFUL WITH THIS, here you have to divide 100% for the amount of images, if you have 5 images then: 100 / 5 = 20, so width 20%
+    
+    *****************
+    So i tested the behavior when having 8 images instead of 5, with the settings of 5, catastrophe! doing that will create two rows of images, so i had to change the width here, 100 pictures divided by 8 pictures = 12,5, here you have to add 12.5, no comas! but i like the 12 alone, then i went up and i changed the width inside the #slider figure, from 300% to 500%.
+    *******************
+    */
+  height: 600px; /*700px to set a maximum height, i prefer 500 but then again dpends of the tastes and the device you are   */
+  float: left;
+  /*  next 2 to continue responsive with the maximum height  */
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+/* ------------Animation------------------------- */
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%; /*the - in the 100 is going to
+       shift the image back on its step, 
+       smooth effect...so back 100% which means 
+       going back to the first picture*/
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}

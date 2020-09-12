@@ -1,0 +1,256 @@
+//
+// -------------
+//  footer TWO media queries
+// -------------
+//
+//
+// -----------------------------------
+//          * *   media-1   * *
+// -----------------------------------
+//            (max-width: 368px)
+//
+@include media-1 {
+  #page {
+    footer {
+      margin-top: 150px;
+      width: 100vw;
+      background-color: rgb(255, 255, 255);
+      .footer-wrapper {
+        width: 100%;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        @include flex-column-data;
+
+        .social-links {
+          width: 100%;
+          padding: 20px 0;
+          background-color: rgb(255, 255, 255);
+          @include flex-column-data;
+
+          ul {
+            list-style: none;
+
+            li {
+              display: inline;
+              margin: 0 10px;
+
+              a {
+                color: rgb(117, 117, 117);
+                font-size: 0.7rem;
+                text-decoration: none;
+                font-family: "Lato-thin";
+                font-weight: 600;
+
+                transition: 0.2s ease-in-out;
+                padding-bottom: 1px;
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                  color: rgb(92, 92, 92);
+                  border-bottom-color: rgb(92, 92, 92);
+                }
+              }
+            }
+          }
+        }
+
+        .copyright {
+          width: 100%;
+          padding: 20px 0;
+          @include flex-row-data;
+          justify-content: space-between;
+          background-color: rgb(255, 255, 255);
+
+          //
+          p:nth-child(even) {
+            color: rgb(41, 41, 41);
+            font-size: 0.7rem;
+            margin-right: 5%;
+            font-family: "Lato-thin";
+            font-weight: 600;
+            letter-spacing: 1px;
+            opacity: 0.7;
+          }
+          //
+          p:nth-child(odd) {
+            color: rgb(41, 41, 41);
+            opacity: 0.7;
+            font-size: 0.7rem;
+            margin-left: 5%;
+            font-family: "Lato-thin";
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+// -----------------------------------
+//          * *   media-2   * *
+// -----------------------------------
+//          (min-width: 369px)
+//
+@include media-2 {
+  #page {
+    footer {
+      margin-top: 150px;
+      width: 100vw;
+      background-color: rgb(255, 255, 255);
+      .footer-wrapper {
+        width: 100%;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        @include flex-column-data;
+
+        .social-links {
+          width: 100%;
+          padding: 20px 0;
+          background-color: rgb(255, 255, 255);
+          @include flex-column-data;
+
+          ul {
+            list-style: none;
+
+            li {
+              display: inline;
+              margin-left: 20px;
+
+              a {
+                color: rgb(117, 117, 117);
+                font-size: 0.7rem;
+                text-decoration: none;
+                font-family: "Lato-thin";
+                font-weight: 600;
+
+                transition: 0.2s ease-in-out;
+                padding-bottom: 1px;
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                  color: rgb(92, 92, 92);
+                  border-bottom-color: rgb(92, 92, 92);
+                }
+              }
+            }
+          }
+        }
+
+        .copyright {
+          width: 100%;
+          padding: 20px 0;
+          @include flex-row-data;
+          justify-content: space-between;
+          background-color: rgb(255, 255, 255);
+
+          //
+          p:nth-child(even) {
+            color: rgb(41, 41, 41);
+            font-size: 0.7rem;
+            margin-right: 5%;
+            font-family: "Lato-thin";
+            font-weight: 600;
+            letter-spacing: 1px;
+            opacity: 0.7;
+          }
+          //
+          p:nth-child(odd) {
+            color: rgb(41, 41, 41);
+            opacity: 0.7;
+            font-size: 0.7rem;
+            margin-left: 5%;
+            font-family: "Lato-thin";
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+// -----------------------------------
+//          * *   media-   * *
+// -----------------------------------
+//  monito   (min-width: 1269px) monito
+//
+@include media-11 {
+  #page {
+    footer {
+      width: 100vw;
+      background-color: rgb(255, 255, 255);
+      .footer-wrapper {
+        width: 100%;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        @include flex-column-data;
+
+        .social-links {
+          width: 100%;
+          padding: 20px 0;
+          background-color: rgb(255, 255, 255);
+          @include flex-row-data;
+          justify-content: space-around;
+
+          ul {
+            list-style: none;
+
+            li {
+              display: inline;
+              margin-left: 20px;
+
+              a {
+                color: rgb(117, 117, 117);
+                font-size: 0.7rem;
+                text-decoration: none;
+                font-family: "Lato-thin";
+                font-weight: 600;
+
+                transition: 0.2s ease-in-out;
+                padding-bottom: 1px;
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                  color: rgb(92, 92, 92);
+                  border-bottom-color: rgb(92, 92, 92);
+                }
+              }
+            }
+          }
+        }
+
+        .copyright {
+          width: 100%;
+          padding: 20px 0;
+          @include flex-row-data;
+          justify-content: space-between;
+          background-color: rgb(255, 255, 255);
+
+          //
+          p:nth-child(even) {
+            color: rgb(41, 41, 41);
+            font-size: 0.7rem;
+            margin-right: 5%;
+            font-family: "Lato-thin";
+            font-weight: 600;
+            letter-spacing: 1px;
+            opacity: 0.7;
+          }
+          //
+          p:nth-child(odd) {
+            color: rgb(41, 41, 41);
+            opacity: 0.7;
+            font-size: 0.7rem;
+            margin-left: 5%;
+            font-family: "Lato-thin";
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    // -------
+    .to-hide {
+      display: inline-block;
+    }
+    //
+  }
+}
